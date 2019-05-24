@@ -9,6 +9,3 @@ __pycache__/
 .eggs/
 .pytest_cache/
 .tox/
-
-# Generated files
-docs/api/
