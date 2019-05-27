@@ -39,6 +39,8 @@ EPICS_EPOCH = datetime.fromtimestamp(ca.EPICS_EPOCH, timezone.utc)
 
 def datetime_to_epics(timestamp):
     """ Convert a datetime object to an epics timestamp tuple. """
+    if timestamp.tzinfo is None:
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
     posix = timestamp.astimezone(timezone.utc).timestamp()
     frac, sec = math.modf(posix)
     return (sec - ca.EPICS_EPOCH, int(frac * 1E9))
