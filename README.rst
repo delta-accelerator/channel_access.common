@@ -21,15 +21,16 @@ Get the source
 --------------
 The source code is available in a `Github repository`_::
 
-    git clone https://github.com/delta-accelerator/channel_access_common
+    git clone https://github.com/delta-accelerator/channel_access.common
 
-.. _Github repository: https://github.com/delta-accelerator/channel_access_common
+.. _Github repository: https://github.com/delta-accelerator/channel_access.common
 
 Documentation
 -------------
 The documentation can be generated from the source code with *sphinx*::
 
     cd /path/to/repository
+    pip install -e .
     python setup.py build_sphinx
 
 Then open ``build/sphinx/html/index.html``.

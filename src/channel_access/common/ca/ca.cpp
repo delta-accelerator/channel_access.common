@@ -135,6 +135,8 @@ bool add_enum(PyObject* module)
 
 PyDoc_STRVAR(ca__doc__, R"(
 Low level wrapper module over the libca enums, flags and constants.
+
+All values are taken directly from the header files.
 )");
 PyModuleDef module = {
     PyModuleDef_HEAD_INIT,

@@ -3,6 +3,11 @@ import enum
 
 
 class Flag(enum.Enum):
+    """ A simple flag class with support for binary operations.
+
+    In order to function correctly all possible bit combinations
+    must exist as members.
+    """
     def __contains__(self, other):
         if not isinstance(other, self.__class__):
             raise TypeError

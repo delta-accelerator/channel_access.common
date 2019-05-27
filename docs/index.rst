@@ -1,6 +1,15 @@
-Channel Access common library
-=============================
+Documentation
+=============
 
-.. automodule:: channel_access.common
-    :members:
-    :undoc-members:
+.. toctree::
+    :maxdepth: 2
+
+    quickstart
+    api
+
+
+Indices and tables
+==================
+
+   * :ref:`genindex`
+   * :ref:`search`

@@ -38,7 +38,17 @@ Events = _create_flag(ca.Events)
 EPICS_EPOCH = datetime.fromtimestamp(ca.EPICS_EPOCH, timezone.utc)
 
 def datetime_to_epics(timestamp):
-    """ Convert a datetime object to an epics timestamp tuple. """
+    """
+    Convert a datetime object to an epics timestamp tuple.
+
+    Args:
+        timestamp (datetime): A datetime object. Is this is a naive
+            datetime object the timezone is assumed to be UTC.
+
+    Returns:
+        A ``(seconds, nanoseconds)`` tuple with an origin of :py:data:`EPICS_EPOCH`
+        in timezone UTC.
+    """
     if timestamp.tzinfo is None:
         timestamp = timestamp.replace(tzinfo=timezone.utc)
     posix = timestamp.astimezone(timezone.utc).timestamp()
@@ -46,5 +56,14 @@ def datetime_to_epics(timestamp):
     return (sec - ca.EPICS_EPOCH, int(frac * 1E9))
 
 def epics_to_datetime(timestamp):
-    """ Convert an epics timestamp tuple to a datetime object. """
+    """
+    Convert an epics timestamp tuple to a datetime object.
+
+    Args:
+        timestamp: A ``(seconds, nanoseconds)`` tuple with an origin
+            of :py:data:`EPICS_EPOCH` in timezone UTC.
+
+    Returns:
+        An aware datetime object with UTC timezone.
+    """
     return datetime.fromtimestamp(ca.EPICS_EPOCH + timestamp[0] + timestamp[1] * 1E-9, timezone.utc)
