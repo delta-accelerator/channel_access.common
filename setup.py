@@ -21,7 +21,6 @@ epics_inc = os.path.join(epics_base, 'include')
 epics_lib = os.path.join(epics_base, 'lib', epics_host_arch)
 
 
-
 ca_path = 'src/channel_access/common/ca'
 ca_extension = Extension('channel_access.common.ca',
     language = 'c++',
@@ -41,10 +40,15 @@ ca_extension = Extension('channel_access.common.ca',
 )
 
 
+with open('README.rst', encoding='utf-8') as f:
+    long_description = f.read()
+
+
 setup(
     name = 'channel_access.common',
     description = 'Channel Access common library',
-    long_description = 'Common functionality for channel access applications',
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
     license='MIT',
     author = 'André Althaus',
     author_email = 'andre.althaus@tu-dortmund.de',
@@ -61,7 +65,7 @@ setup(
     packages = PEP420PackageFinder.find('src'),
     package_dir = { '': 'src' },
     ext_modules = [ ca_extension ],
-    python_requires = '>= 3.4',
+    python_requires = '>= 3.5',
     setup_requires = [ 'setuptools_scm' ],
     install_requires = [],
     extras_require = {
