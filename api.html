@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>API reference &#8212; channel_access.common 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-channel_access.common">
+<span id="api-reference"></span><h1>API reference<a class="headerlink" href="#module-channel_access.common" title="Permalink to this headline">¶</a></h1>
+<p>Common functionality for channel access.</p>
+<dl class="class">
+<dt id="channel_access.common.AccessRights">
+<em class="property">class </em><code class="descclassname">channel_access.common.</code><code class="descname">AccessRights</code><a class="headerlink" href="#channel_access.common.AccessRights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Access rights for channel access PVs.</p>
+<p>These can be combined by or-ing them together.</p>
+<dl class="attribute">
+<dt id="channel_access.common.AccessRights.NO_ACCESS">
+<code class="descname">NO_ACCESS</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.AccessRights.NO_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.AccessRights.READ_ACCESS">
+<code class="descname">READ_ACCESS</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.AccessRights.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.AccessRights.RW_ACCESS">
+<code class="descname">RW_ACCESS</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.AccessRights.RW_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.AccessRights.WRITE_ACCESS">
+<code class="descname">WRITE_ACCESS</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.AccessRights.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="data">
+<dt id="channel_access.common.EPICS_EPOCH">
+<code class="descclassname">channel_access.common.</code><code class="descname">EPICS_EPOCH</code><em class="property"> = datetime.datetime(1990, 1, 1, 0, 0, tzinfo=datetime.timezone.utc)</em><a class="headerlink" href="#channel_access.common.EPICS_EPOCH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Epics Epoch</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="channel_access.common.Events">
+<em class="property">class </em><code class="descclassname">channel_access.common.</code><code class="descname">Events</code><a class="headerlink" href="#channel_access.common.Events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Available event sources for channel access PVs.</p>
+<p>These can be combined by or-ing them together.</p>
+<dl class="attribute">
+<dt id="channel_access.common.Events.ALARM">
+<code class="descname">ALARM</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Events.ALARM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Events.ALL">
+<code class="descname">ALL</code><em class="property"> = 15</em><a class="headerlink" href="#channel_access.common.Events.ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Events.ARCHIVE">
+<code class="descname">ARCHIVE</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Events.ARCHIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Events.NONE">
+<code class="descname">NONE</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Events.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Events.PROPERTY">
+<code class="descname">PROPERTY</code><em class="property"> = 8</em><a class="headerlink" href="#channel_access.common.Events.PROPERTY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Events.VALUE">
+<code class="descname">VALUE</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Events.VALUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="channel_access.common.Severity">
+<em class="property">class </em><code class="descclassname">channel_access.common.</code><code class="descname">Severity</code><a class="headerlink" href="#channel_access.common.Severity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alarm severity of a channel access PV.</p>
+<dl class="attribute">
+<dt id="channel_access.common.Severity.INVALID">
+<code class="descname">INVALID</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Severity.INVALID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Severity.MAJOR">
+<code class="descname">MAJOR</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Severity.MAJOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Severity.MINOR">
+<code class="descname">MINOR</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Severity.MINOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Severity.NO_ALARM">
+<code class="descname">NO_ALARM</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Severity.NO_ALARM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="channel_access.common.Status">
+<em class="property">class </em><code class="descclassname">channel_access.common.</code><code class="descname">Status</code><a class="headerlink" href="#channel_access.common.Status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alarm status of a channel access PV.</p>
+<dl class="attribute">
+<dt id="channel_access.common.Status.BAD_SUB">
+<code class="descname">BAD_SUB</code><em class="property"> = 16</em><a class="headerlink" href="#channel_access.common.Status.BAD_SUB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.CALC">
+<code class="descname">CALC</code><em class="property"> = 12</em><a class="headerlink" href="#channel_access.common.Status.CALC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.COMM">
+<code class="descname">COMM</code><em class="property"> = 9</em><a class="headerlink" href="#channel_access.common.Status.COMM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.COS">
+<code class="descname">COS</code><em class="property"> = 8</em><a class="headerlink" href="#channel_access.common.Status.COS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.DISABLE">
+<code class="descname">DISABLE</code><em class="property"> = 18</em><a class="headerlink" href="#channel_access.common.Status.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.HIGH">
+<code class="descname">HIGH</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Status.HIGH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.HIHI">
+<code class="descname">HIHI</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Status.HIHI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.HWLIMIT">
+<code class="descname">HWLIMIT</code><em class="property"> = 11</em><a class="headerlink" href="#channel_access.common.Status.HWLIMIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.LINK">
+<code class="descname">LINK</code><em class="property"> = 14</em><a class="headerlink" href="#channel_access.common.Status.LINK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.LOLO">
+<code class="descname">LOLO</code><em class="property"> = 5</em><a class="headerlink" href="#channel_access.common.Status.LOLO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.LOW">
+<code class="descname">LOW</code><em class="property"> = 6</em><a class="headerlink" href="#channel_access.common.Status.LOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.NO_ALARM">
+<code class="descname">NO_ALARM</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Status.NO_ALARM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.READ">
+<code class="descname">READ</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Status.READ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.READ_ACCESS">
+<code class="descname">READ_ACCESS</code><em class="property"> = 20</em><a class="headerlink" href="#channel_access.common.Status.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.SCAN">
+<code class="descname">SCAN</code><em class="property"> = 13</em><a class="headerlink" href="#channel_access.common.Status.SCAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.SIMM">
+<code class="descname">SIMM</code><em class="property"> = 19</em><a class="headerlink" href="#channel_access.common.Status.SIMM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.SOFT">
+<code class="descname">SOFT</code><em class="property"> = 15</em><a class="headerlink" href="#channel_access.common.Status.SOFT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.STATE">
+<code class="descname">STATE</code><em class="property"> = 7</em><a class="headerlink" href="#channel_access.common.Status.STATE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.TIMEOUT">
+<code class="descname">TIMEOUT</code><em class="property"> = 10</em><a class="headerlink" href="#channel_access.common.Status.TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.UDF">
+<code class="descname">UDF</code><em class="property"> = 17</em><a class="headerlink" href="#channel_access.common.Status.UDF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.WRITE">
+<code class="descname">WRITE</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Status.WRITE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Status.WRITE_ACCESS">
+<code class="descname">WRITE_ACCESS</code><em class="property"> = 21</em><a class="headerlink" href="#channel_access.common.Status.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="channel_access.common.Type">
+<em class="property">class </em><code class="descclassname">channel_access.common.</code><code class="descname">Type</code><a class="headerlink" href="#channel_access.common.Type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Possible types of a channel access PV.</p>
+<dl class="attribute">
+<dt id="channel_access.common.Type.CHAR">
+<code class="descname">CHAR</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Type.CHAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.DOUBLE">
+<code class="descname">DOUBLE</code><em class="property"> = 6</em><a class="headerlink" href="#channel_access.common.Type.DOUBLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.ENUM">
+<code class="descname">ENUM</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Type.ENUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.FLOAT">
+<code class="descname">FLOAT</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Type.FLOAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.LONG">
+<code class="descname">LONG</code><em class="property"> = 5</em><a class="headerlink" href="#channel_access.common.Type.LONG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.SHORT">
+<code class="descname">SHORT</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Type.SHORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="channel_access.common.Type.STRING">
+<code class="descname">STRING</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Type.STRING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="channel_access.common.datetime_to_epics">
+<code class="descclassname">channel_access.common.</code><code class="descname">datetime_to_epics</code><span class="sig-paren">(</span><em>timestamp</em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.datetime_to_epics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a datetime object to an epics timestamp tuple.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timestamp</strong> (<em>datetime</em>) – A datetime object. Is this is a naive
+datetime object the timezone is assumed to be UTC.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <code class="docutils literal notranslate"><span class="pre">(seconds,</span> <span class="pre">nanoseconds)</span></code> tuple with an origin of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title="channel_access.common.EPICS_EPOCH"><code class="xref py py-data docutils literal notranslate"><span class="pre">EPICS_EPOCH</span></code></a>
+in timezone UTC.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="channel_access.common.epics_to_datetime">
+<code class="descclassname">channel_access.common.</code><code class="descname">epics_to_datetime</code><span class="sig-paren">(</span><em>timestamp</em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.epics_to_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an epics timestamp tuple to a datetime object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timestamp</strong> – A <code class="docutils literal notranslate"><span class="pre">(seconds,</span> <span class="pre">nanoseconds)</span></code> tuple with an origin
+of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title="channel_access.common.EPICS_EPOCH"><code class="xref py py-data docutils literal notranslate"><span class="pre">EPICS_EPOCH</span></code></a> in timezone UTC.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An aware datetime object with UTC timezone.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">channel_access.common</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="genindex.html">Index</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quickstart</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+      
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
