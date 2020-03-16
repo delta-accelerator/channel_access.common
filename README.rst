@@ -17,6 +17,19 @@ Then the library can be installed with pip::
 
     pip install channel_access.common
 
+Documentation
+-------------
+The documentation is available `online`_ or it can be
+generated from the source code with *sphinx*::
+
+    cd /path/to/repository
+    pip install -e .
+    python setup.py build_sphinx
+
+Then open ``build/sphinx/html/index.html``.
+
+.. _online: https://delta-accelerator.github.io/channel_access.common
+
 Get the source
 --------------
 The source code is available in a `Github repository`_::
@@ -24,16 +37,6 @@ The source code is available in a `Github repository`_::
     git clone https://github.com/delta-accelerator/channel_access.common
 
 .. _Github repository: https://github.com/delta-accelerator/channel_access.common
-
-Documentation
--------------
-The documentation can be generated from the source code with *sphinx*::
-
-    cd /path/to/repository
-    pip install -e .
-    python setup.py build_sphinx
-
-Then open ``build/sphinx/html/index.html``.
 
 Tests
 -----
