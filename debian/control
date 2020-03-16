@@ -1,0 +1,19 @@
+Source: channel-access.common
+Section: science
+Priority: optional
+Maintainer: André Althaus <andre.althaus@tu-dortmund.de>
+Build-Depends: debhelper,
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-setuptools-scm,
+               epics-base
+X-Python3-Version: >= 3.5
+
+Package: python3-channel-access.common
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python channel access comon library (Python 3)
+ This package contains the common parts for channel access.
+ .
+ This package installs the library for Python 3.
