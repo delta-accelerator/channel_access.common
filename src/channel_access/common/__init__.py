@@ -53,7 +53,7 @@ def datetime_to_epics(timestamp):
         timestamp = timestamp.replace(tzinfo=timezone.utc)
     posix = timestamp.astimezone(timezone.utc).timestamp()
     frac, sec = math.modf(posix)
-    return (sec - ca.EPICS_EPOCH, int(frac * 1E9))
+    return (int(sec - ca.EPICS_EPOCH), int(frac * 1E9))
 
 def epics_to_datetime(timestamp):
     """
