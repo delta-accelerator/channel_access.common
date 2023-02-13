@@ -1,18 +1,20 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API reference &#8212; channel_access.common 0.1.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>API reference &#8212; channel_access.common 0.1.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Quickstart" href="quickstart.html" />
@@ -32,272 +34,272 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-channel_access.common">
-<span id="api-reference"></span><h1>API reference<a class="headerlink" href="#module-channel_access.common" title="Permalink to this headline">¶</a></h1>
+  <section id="module-channel_access.common">
+<span id="api-reference"></span><h1>API reference<a class="headerlink" href="#module-channel_access.common" title="Permalink to this heading">¶</a></h1>
 <p>Common functionality for channel access.</p>
 <dl class="py class">
-<dt id="channel_access.common.AccessRights">
-<em class="property">class </em><code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">AccessRights</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.AccessRights" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.AccessRights">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">AccessRights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.AccessRights" title="Permalink to this definition">¶</a></dt>
 <dd><p>Access rights for channel access PVs.</p>
 <p>These can be combined by or-ing them together.</p>
 <dl class="py attribute">
-<dt id="channel_access.common.AccessRights.NO_ACCESS">
-<code class="sig-name descname">NO_ACCESS</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.AccessRights.NO_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.AccessRights.NO_ACCESS">
+<span class="sig-name descname"><span class="pre">NO_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#channel_access.common.AccessRights.NO_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.AccessRights.READ_ACCESS">
-<code class="sig-name descname">READ_ACCESS</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.AccessRights.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.AccessRights.READ_ACCESS">
+<span class="sig-name descname"><span class="pre">READ_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#channel_access.common.AccessRights.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.AccessRights.RW_ACCESS">
-<code class="sig-name descname">RW_ACCESS</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.AccessRights.RW_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.AccessRights.RW_ACCESS">
+<span class="sig-name descname"><span class="pre">RW_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#channel_access.common.AccessRights.RW_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.AccessRights.WRITE_ACCESS">
-<code class="sig-name descname">WRITE_ACCESS</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.AccessRights.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.AccessRights.WRITE_ACCESS">
+<span class="sig-name descname"><span class="pre">WRITE_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#channel_access.common.AccessRights.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py data">
-<dt id="channel_access.common.EPICS_EPOCH">
-<code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">EPICS_EPOCH</code><em class="property"> = datetime.datetime(1990, 1, 1, 0, 0, tzinfo=datetime.timezone.utc)</em><a class="headerlink" href="#channel_access.common.EPICS_EPOCH" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.EPICS_EPOCH">
+<span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">EPICS_EPOCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">datetime.datetime(1990,</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">tzinfo=datetime.timezone.utc)</span></em><a class="headerlink" href="#channel_access.common.EPICS_EPOCH" title="Permalink to this definition">¶</a></dt>
 <dd><p>Epics Epoch</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="channel_access.common.Events">
-<em class="property">class </em><code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">Events</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Events" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">Events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Events" title="Permalink to this definition">¶</a></dt>
 <dd><p>Available event sources for channel access PVs.</p>
 <p>These can be combined by or-ing them together.</p>
 <dl class="py attribute">
-<dt id="channel_access.common.Events.ALARM">
-<code class="sig-name descname">ALARM</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Events.ALARM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.ALARM">
+<span class="sig-name descname"><span class="pre">ALARM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#channel_access.common.Events.ALARM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Events.ALL">
-<code class="sig-name descname">ALL</code><em class="property"> = 15</em><a class="headerlink" href="#channel_access.common.Events.ALL" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.ALL">
+<span class="sig-name descname"><span class="pre">ALL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#channel_access.common.Events.ALL" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Events.ARCHIVE">
-<code class="sig-name descname">ARCHIVE</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Events.ARCHIVE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.ARCHIVE">
+<span class="sig-name descname"><span class="pre">ARCHIVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#channel_access.common.Events.ARCHIVE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Events.NONE">
-<code class="sig-name descname">NONE</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Events.NONE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#channel_access.common.Events.NONE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Events.PROPERTY">
-<code class="sig-name descname">PROPERTY</code><em class="property"> = 8</em><a class="headerlink" href="#channel_access.common.Events.PROPERTY" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.PROPERTY">
+<span class="sig-name descname"><span class="pre">PROPERTY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#channel_access.common.Events.PROPERTY" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Events.VALUE">
-<code class="sig-name descname">VALUE</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Events.VALUE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Events.VALUE">
+<span class="sig-name descname"><span class="pre">VALUE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#channel_access.common.Events.VALUE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="channel_access.common.Severity">
-<em class="property">class </em><code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">Severity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Severity" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Severity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">Severity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Severity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alarm severity of a channel access PV.</p>
 <dl class="py attribute">
-<dt id="channel_access.common.Severity.INVALID">
-<code class="sig-name descname">INVALID</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Severity.INVALID" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Severity.INVALID">
+<span class="sig-name descname"><span class="pre">INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#channel_access.common.Severity.INVALID" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Severity.MAJOR">
-<code class="sig-name descname">MAJOR</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Severity.MAJOR" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Severity.MAJOR">
+<span class="sig-name descname"><span class="pre">MAJOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#channel_access.common.Severity.MAJOR" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Severity.MINOR">
-<code class="sig-name descname">MINOR</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Severity.MINOR" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Severity.MINOR">
+<span class="sig-name descname"><span class="pre">MINOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#channel_access.common.Severity.MINOR" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Severity.NO_ALARM">
-<code class="sig-name descname">NO_ALARM</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Severity.NO_ALARM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Severity.NO_ALARM">
+<span class="sig-name descname"><span class="pre">NO_ALARM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#channel_access.common.Severity.NO_ALARM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="channel_access.common.Status">
-<em class="property">class </em><code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">Status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Status" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">Status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Status" title="Permalink to this definition">¶</a></dt>
 <dd><p>Alarm status of a channel access PV.</p>
 <dl class="py attribute">
-<dt id="channel_access.common.Status.BAD_SUB">
-<code class="sig-name descname">BAD_SUB</code><em class="property"> = 16</em><a class="headerlink" href="#channel_access.common.Status.BAD_SUB" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.BAD_SUB">
+<span class="sig-name descname"><span class="pre">BAD_SUB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#channel_access.common.Status.BAD_SUB" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.CALC">
-<code class="sig-name descname">CALC</code><em class="property"> = 12</em><a class="headerlink" href="#channel_access.common.Status.CALC" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.CALC">
+<span class="sig-name descname"><span class="pre">CALC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#channel_access.common.Status.CALC" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.COMM">
-<code class="sig-name descname">COMM</code><em class="property"> = 9</em><a class="headerlink" href="#channel_access.common.Status.COMM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.COMM">
+<span class="sig-name descname"><span class="pre">COMM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#channel_access.common.Status.COMM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.COS">
-<code class="sig-name descname">COS</code><em class="property"> = 8</em><a class="headerlink" href="#channel_access.common.Status.COS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.COS">
+<span class="sig-name descname"><span class="pre">COS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#channel_access.common.Status.COS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.DISABLE">
-<code class="sig-name descname">DISABLE</code><em class="property"> = 18</em><a class="headerlink" href="#channel_access.common.Status.DISABLE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.DISABLE">
+<span class="sig-name descname"><span class="pre">DISABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#channel_access.common.Status.DISABLE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.HIGH">
-<code class="sig-name descname">HIGH</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Status.HIGH" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.HIGH">
+<span class="sig-name descname"><span class="pre">HIGH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#channel_access.common.Status.HIGH" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.HIHI">
-<code class="sig-name descname">HIHI</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Status.HIHI" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.HIHI">
+<span class="sig-name descname"><span class="pre">HIHI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#channel_access.common.Status.HIHI" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.HWLIMIT">
-<code class="sig-name descname">HWLIMIT</code><em class="property"> = 11</em><a class="headerlink" href="#channel_access.common.Status.HWLIMIT" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.HWLIMIT">
+<span class="sig-name descname"><span class="pre">HWLIMIT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#channel_access.common.Status.HWLIMIT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.LINK">
-<code class="sig-name descname">LINK</code><em class="property"> = 14</em><a class="headerlink" href="#channel_access.common.Status.LINK" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.LINK">
+<span class="sig-name descname"><span class="pre">LINK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#channel_access.common.Status.LINK" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.LOLO">
-<code class="sig-name descname">LOLO</code><em class="property"> = 5</em><a class="headerlink" href="#channel_access.common.Status.LOLO" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.LOLO">
+<span class="sig-name descname"><span class="pre">LOLO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#channel_access.common.Status.LOLO" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.LOW">
-<code class="sig-name descname">LOW</code><em class="property"> = 6</em><a class="headerlink" href="#channel_access.common.Status.LOW" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.LOW">
+<span class="sig-name descname"><span class="pre">LOW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#channel_access.common.Status.LOW" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.NO_ALARM">
-<code class="sig-name descname">NO_ALARM</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Status.NO_ALARM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.NO_ALARM">
+<span class="sig-name descname"><span class="pre">NO_ALARM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#channel_access.common.Status.NO_ALARM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.READ">
-<code class="sig-name descname">READ</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Status.READ" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.READ">
+<span class="sig-name descname"><span class="pre">READ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#channel_access.common.Status.READ" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.READ_ACCESS">
-<code class="sig-name descname">READ_ACCESS</code><em class="property"> = 20</em><a class="headerlink" href="#channel_access.common.Status.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.READ_ACCESS">
+<span class="sig-name descname"><span class="pre">READ_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#channel_access.common.Status.READ_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.SCAN">
-<code class="sig-name descname">SCAN</code><em class="property"> = 13</em><a class="headerlink" href="#channel_access.common.Status.SCAN" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.SCAN">
+<span class="sig-name descname"><span class="pre">SCAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#channel_access.common.Status.SCAN" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.SIMM">
-<code class="sig-name descname">SIMM</code><em class="property"> = 19</em><a class="headerlink" href="#channel_access.common.Status.SIMM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.SIMM">
+<span class="sig-name descname"><span class="pre">SIMM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#channel_access.common.Status.SIMM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.SOFT">
-<code class="sig-name descname">SOFT</code><em class="property"> = 15</em><a class="headerlink" href="#channel_access.common.Status.SOFT" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.SOFT">
+<span class="sig-name descname"><span class="pre">SOFT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#channel_access.common.Status.SOFT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.STATE">
-<code class="sig-name descname">STATE</code><em class="property"> = 7</em><a class="headerlink" href="#channel_access.common.Status.STATE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.STATE">
+<span class="sig-name descname"><span class="pre">STATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#channel_access.common.Status.STATE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.TIMEOUT">
-<code class="sig-name descname">TIMEOUT</code><em class="property"> = 10</em><a class="headerlink" href="#channel_access.common.Status.TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.TIMEOUT">
+<span class="sig-name descname"><span class="pre">TIMEOUT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#channel_access.common.Status.TIMEOUT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.UDF">
-<code class="sig-name descname">UDF</code><em class="property"> = 17</em><a class="headerlink" href="#channel_access.common.Status.UDF" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.UDF">
+<span class="sig-name descname"><span class="pre">UDF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#channel_access.common.Status.UDF" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.WRITE">
-<code class="sig-name descname">WRITE</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Status.WRITE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.WRITE">
+<span class="sig-name descname"><span class="pre">WRITE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#channel_access.common.Status.WRITE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Status.WRITE_ACCESS">
-<code class="sig-name descname">WRITE_ACCESS</code><em class="property"> = 21</em><a class="headerlink" href="#channel_access.common.Status.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Status.WRITE_ACCESS">
+<span class="sig-name descname"><span class="pre">WRITE_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#channel_access.common.Status.WRITE_ACCESS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="channel_access.common.Type">
-<em class="property">class </em><code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">Type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">Type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.Type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Possible types of a channel access PV.</p>
 <dl class="py attribute">
-<dt id="channel_access.common.Type.CHAR">
-<code class="sig-name descname">CHAR</code><em class="property"> = 4</em><a class="headerlink" href="#channel_access.common.Type.CHAR" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.CHAR">
+<span class="sig-name descname"><span class="pre">CHAR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#channel_access.common.Type.CHAR" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.DOUBLE">
-<code class="sig-name descname">DOUBLE</code><em class="property"> = 6</em><a class="headerlink" href="#channel_access.common.Type.DOUBLE" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.DOUBLE">
+<span class="sig-name descname"><span class="pre">DOUBLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#channel_access.common.Type.DOUBLE" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.ENUM">
-<code class="sig-name descname">ENUM</code><em class="property"> = 3</em><a class="headerlink" href="#channel_access.common.Type.ENUM" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.ENUM">
+<span class="sig-name descname"><span class="pre">ENUM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#channel_access.common.Type.ENUM" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.FLOAT">
-<code class="sig-name descname">FLOAT</code><em class="property"> = 2</em><a class="headerlink" href="#channel_access.common.Type.FLOAT" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.FLOAT">
+<span class="sig-name descname"><span class="pre">FLOAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#channel_access.common.Type.FLOAT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.LONG">
-<code class="sig-name descname">LONG</code><em class="property"> = 5</em><a class="headerlink" href="#channel_access.common.Type.LONG" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.LONG">
+<span class="sig-name descname"><span class="pre">LONG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#channel_access.common.Type.LONG" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.SHORT">
-<code class="sig-name descname">SHORT</code><em class="property"> = 1</em><a class="headerlink" href="#channel_access.common.Type.SHORT" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.SHORT">
+<span class="sig-name descname"><span class="pre">SHORT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#channel_access.common.Type.SHORT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="channel_access.common.Type.STRING">
-<code class="sig-name descname">STRING</code><em class="property"> = 0</em><a class="headerlink" href="#channel_access.common.Type.STRING" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.Type.STRING">
+<span class="sig-name descname"><span class="pre">STRING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#channel_access.common.Type.STRING" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
-<dt id="channel_access.common.datetime_to_epics">
-<code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">datetime_to_epics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">timestamp</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.datetime_to_epics" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.datetime_to_epics">
+<span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">datetime_to_epics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.datetime_to_epics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a datetime object to an epics timestamp tuple.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>timestamp</strong> (<em>datetime</em>) – A datetime object. Is this is a naive
 datetime object the timezone is assumed to be UTC.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A <code class="docutils literal notranslate"><span class="pre">(seconds,</span> <span class="pre">nanoseconds)</span></code> tuple with an origin of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title="channel_access.common.EPICS_EPOCH"><code class="xref py py-data docutils literal notranslate"><span class="pre">EPICS_EPOCH</span></code></a>
 in timezone UTC.</p>
 </dd>
@@ -305,21 +307,21 @@ in timezone UTC.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt id="channel_access.common.epics_to_datetime">
-<code class="sig-prename descclassname">channel_access.common.</code><code class="sig-name descname">epics_to_datetime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">timestamp</span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.epics_to_datetime" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="channel_access.common.epics_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">channel_access.common.</span></span><span class="sig-name descname"><span class="pre">epics_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#channel_access.common.epics_to_datetime" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert an epics timestamp tuple to a datetime object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>timestamp</strong> – A <code class="docutils literal notranslate"><span class="pre">(seconds,</span> <span class="pre">nanoseconds)</span></code> tuple with an origin
 of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title="channel_access.common.EPICS_EPOCH"><code class="xref py py-data docutils literal notranslate"><span class="pre">EPICS_EPOCH</span></code></a> in timezone UTC.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>An aware datetime object with UTC timezone.</p>
 </dd>
 </dl>
 </dd></dl>
 
-</div>
+</section>
 
 
           </div>
@@ -340,7 +342,17 @@ of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.AccessRights"><code class="docutils literal notranslate"><span class="pre">AccessRights</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.EPICS_EPOCH"><code class="docutils literal notranslate"><span class="pre">EPICS_EPOCH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.Events"><code class="docutils literal notranslate"><span class="pre">Events</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.Severity"><code class="docutils literal notranslate"><span class="pre">Severity</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.Status"><code class="docutils literal notranslate"><span class="pre">Status</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.Type"><code class="docutils literal notranslate"><span class="pre">Type</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.datetime_to_epics"><code class="docutils literal notranslate"><span class="pre">datetime_to_epics()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#channel_access.common.epics_to_datetime"><code class="docutils literal notranslate"><span class="pre">epics_to_datetime()</span></code></a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -362,12 +374,12 @@ of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -384,8 +396,8 @@ of <a class="reference internal" href="#channel_access.common.EPICS_EPOCH" title
       
       
       
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
       <a href="_sources/api.rst.txt"
